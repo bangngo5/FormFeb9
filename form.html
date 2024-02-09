@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        @media only screen and (max-width: 600px){
+            form {
+                width: 90%;
+            }
+            .main-content{
+                margin-left: 0;
+            }
+            .sidebar{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a>Home</a>
+        <a>About</a>
+        <a>Courses</a>
+        <a>Contact</a>
+    </div>
+    <main>
+        <form>
+            <div class="flex-container">
+                <div class="content">
+                    <div>
+                        <input id="cs" type="text" placeholder="Computer Science"> <br>
+                    </div>
+                    <div>
+                        <b><label for="PG">Profile Grades:</label> </b> <br>
+                        <input id="PG" type="text" placeholder="Enter your profile grades"> <br>
+                    </div>
+                    <div>
+                        <b><label for="Email">Email:</label></b> <br>
+                        <input id="Email" type="email" placeholder="Enter your email"> <br>
+                    </div>
+                    <div>
+                        <b><label for="PQ">Profile Equivalence:</label></b> <br>
+                        <input id="PQ" type="text" placeholder="Enter profile equivalence"> <br>
+                    </div>
+                    <div>
+                        <b><label for="gen"> Gender:</label></b>
+                        <input id="male" name="gen" type="radio" value="male">
+                          <label for="male">Male</label>
+                          <input id="female" name="gen" type="radio" value="female">
+                          <label for="female">Female</label>  
+                    </div>
+                    <div>
+                        <b><label for="mos">Mode of Study: </label></b>
+                        <input id="ft" name="mos" type="radio" value="ft">
+                          <label for="ft">Full-Time</label>
+                          <input id="pt" name="mos" type="radio" value="pt">
+                          <label for="pt">Part-Time</label>  
+                    </div>
+                    <div>
+                        <b><label for="cea">Choose Extracurricular Activities:</label></b> <br>
+                        <input id="sports" type="checkbox"> <br>
+                        <label for="sports">Sports</label> <br>
+                        <input id="music" type="checkbox"> <br>
+                        <label for="music">Music</label> <br>
+                        <input id="coding" type="checkbox"> <br>
+                        <label for="coding">Coding</label> <br>
+                    </div>
+                    <div>
+                        <b><label for="cah">Creative arts hobbies</label></b>
+                        <select id="hobbies">
+                            <option value="Acting">Acting</option>
+                            <option value="DIY">DIY</option>
+                            <option value="Piano">Piano</option>
+                            <option value="Other">Other</option>
+                          </select>
+                    </div>
+                    <div>
+                        <b><label for="Information">Additional Information:</label></b> <br>
+                        <textarea id="message" placeholder="aazzzas;jadsooqwqw;oqwepiqewphnasf;aisdhiqwq;qwoia;qqzaaaa"></textarea><br>
+                    </div>
+                    <div>
+                        <b><label for="map">Location on Map</label></b> <br>
+                        <img src="University.png" width="600px" height="400px" usemap="#mymap">
+                        <br>
+                       
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
